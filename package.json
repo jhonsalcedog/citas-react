@@ -1,0 +1,53 @@
+{
+  "name": "citas-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
+    "lint-global": "echo \"Prettier is running...\" && prettier \"**/*.{js,jsx,ts,tsx}\" --write && echo \"ESlint is running...\" && eslint ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.15.5",
+    "@babel/eslint-parser": "~7.15.4",
+    "@babel/plugin-transform-runtime": "~7.15.0",
+    "@babel/preset-react": "~7.0.0",
+    "@condor-labs/eslint-config": "1.3.0",
+    "@condor-labs/matchbox": "1.8.0",
+    "@condor-labs/prettier-config": "1.1.1",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-config-standard": "~16.0.3",
+    "eslint-plugin-import": "~2.24.2",
+    "eslint-plugin-jsx-a11y": "~6.4.1",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-prettier": "~3.4.1",
+    "eslint-plugin-promise": "~5.1.0",
+    "eslint-plugin-react": "~7.25.2",
+    "husky": "8.0.1",
+    "lint-staged": "10.5.4",
+    "postcss": "^8.4.18",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.2.1",
+    "vite": "^3.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier --write"
+    ]
+  }
+}
