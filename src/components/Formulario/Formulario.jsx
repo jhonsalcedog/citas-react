@@ -120,6 +120,17 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
         >
           {paciente.id ? 'Editar Paciente' : 'Agregar Paciente'}
         </button>
+
+        {paciente.id ? (
+          <button
+            type="submit"
+            className="w-full p-3 text-indigo-600 uppercase font-bold transition-all rounded-md border-indigo-600 border-2 mt-6"
+          >
+            Cancelar
+          </button>
+        ) : (
+          ''
+        )}
       </form>
     </div>
   );
