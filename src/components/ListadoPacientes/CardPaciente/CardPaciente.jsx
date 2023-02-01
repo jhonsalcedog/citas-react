@@ -21,7 +21,7 @@ const CardPaciente = ({ paciente, setPaciente, eliminarPaciente }) => {
   };
 
   return (
-    <div className="m-3 bg-white shadow-md px-5 py-10 rounded-xl">
+    <div className="m-4 bg-white shadow-md px-5 py-10 rounded-xl">
       <LabelCard titulo="Nombre" texto={mascota} />
       <LabelCard titulo="Propietario" texto={propietario} />
       <LabelCard titulo="Email" texto={email} />
